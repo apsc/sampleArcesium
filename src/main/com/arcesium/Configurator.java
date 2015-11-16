@@ -23,7 +23,7 @@ import java.io.IOException;
 @MapperScan("com.arcesium.mapper")
 public class Configurator {
     private static final Logger LOGGER = LoggerFactory.getLogger(Configurator.class);
-//    private final DataSourceProperties config = getConfig();
+    private final DataSourceProperties config = getConfig();
 
     @Bean
     public DataSource getDataSource() {

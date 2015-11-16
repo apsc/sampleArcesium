@@ -1,16 +1,21 @@
 package com.arcesium.model;
 
+import org.apache.ibatis.annotations.Param;
+
 /**
  * Created by amanpsc on 12/11/15.
  */
 public class Employee {
-    private Integer eid, mid;
+    private Integer eid;
+    private Integer mid;
     private String name;
     public Employee(Integer id, String name, Integer mid) {
         this.eid = id;
         this.name = name;
         this.mid = mid;
     }
+
+    public Employee(){}
 
     public Integer getEid() {
         return eid;
